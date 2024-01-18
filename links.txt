@@ -1,0 +1,12 @@
+#LATEST MEALS 
+www.themealdb.com/api/json/v1/1/latest.php
+
+#ALL MEALS BY CATEGORY
+www.themealdb.com/api/json/v1/1/categories.php
+
+#SEARCH BY MEAL NAME
+www.themealdb.com/api/json/v1/1/search.php?s=Arrabiata
+
+#MEAL DETAIL BY ID
+www.themealdb.com/api/json/v1/1/lookup.php?i=52772
+
