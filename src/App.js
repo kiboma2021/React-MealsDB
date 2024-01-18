@@ -1,7 +1,13 @@
 
+import { Header } from "./components";
+
+
 function App() {
   return (
     <main>
+      <Header/>
+
+
 
     </main>
   );
