@@ -1,5 +1,5 @@
 
-import { Header } from "./components";
+import { Header,Footer } from "./components";
 import { AllRoutes } from "./routes/AllRoutes";
 
 function App() {
@@ -7,6 +7,8 @@ function App() {
     <main>
       <Header/>
       <AllRoutes />
+
+      <Footer />
 
 
 
