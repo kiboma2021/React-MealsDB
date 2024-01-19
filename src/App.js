@@ -6,8 +6,10 @@ function App() {
   return (
     <main>
       <Header/>
-      <AllRoutes />
-
+      <section className="h-screen bg-gray-200" >
+        <AllRoutes />
+      </section>
+      
       <Footer />
 
 
