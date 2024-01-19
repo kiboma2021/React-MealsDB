@@ -6,7 +6,7 @@ function App() {
   return (
     <main>
       <Header/>
-      <section className="h-screen bg-gray-200" >
+      <section>
         <AllRoutes />
       </section>
       
