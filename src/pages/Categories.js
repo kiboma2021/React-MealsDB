@@ -11,7 +11,7 @@ export const Categories = ({apiPath,title}) => {
 
   return (
     <main className="flex flex-wrap justify-center gap-10">
-      {meals && meals.map((meal)=>(
+      {meals.categories && meals.categories.map((meal)=>(
         <Card key={meal.idCategory} meal={meal}  />
 
       ))}

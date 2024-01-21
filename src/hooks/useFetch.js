@@ -12,7 +12,7 @@ export const useFetch = ({apiPath}) => {
         async function getMeals() {
           const response = await fetch(url);
           const result = await response.json();
-          setMeals(result.categories)
+          setMeals(result)
         }
         getMeals();
       },[url]);
