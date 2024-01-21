@@ -1,19 +1,16 @@
-import { useEffect, useState } from "react"
+
 import { Card } from "../components"
+import { useFetch } from "../hooks"
 
-export const Categories = () => {
-  const [meals, setMeals] = useState([]);
+export const Categories = ({apiPath,title}) => {
 
-  useEffect(() => {
-    async function getMeals() {
-      const response = await fetch("https://www.themealdb.com/api/json/v1/1/categories.php")
-      const result = await response.json();
-      setMeals(result.categories)
-    }
-    getMeals();
-  },[]);
+  const { meals } = useFetch({apiPath})
+
+
+
+
   return (
-    <main className="flex flex-wrap justify-center gap-10 m-8 p-8">
+    <main className="flex flex-wrap justify-center gap-10">
       {meals && meals.map((meal)=>(
         <Card key={meal.idCategory} meal={meal}  />
 

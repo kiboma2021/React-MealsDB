@@ -4,9 +4,9 @@ import { AllRoutes } from "./routes/AllRoutes";
 
 function App() {
   return (
-    <main>
+    <main className='dark:bg-slate-800'>
       <Header/>
-      <section>
+      <section className="m-8 p-8">
         <AllRoutes />
       </section>
       
