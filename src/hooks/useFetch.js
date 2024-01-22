@@ -13,9 +13,12 @@ export const useFetch = ({apiPath}) => {
           const response = await fetch(url);
           const result = await response.json();
           setMeals(result)
+
         }
         getMeals();
       },[url]);
+
+      console.log(meals);
     
   return {meals}
 }
